@@ -1,18 +1,18 @@
-/* Copyright (C) 2021 Queen Amdi.
+/* Copyright (C) 2021 Udula Bro.
 
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
 
-Queen Amdi - Black Amda
+Udula Bro - Mr.bot
 */
 
 
 const chalk = require('chalk');
 const {WAConnection} = require('@adiwajshing/baileys');
-const {StringSession} = require('./queenamdi/');
+const {StringSession} = require('./udulabro/');
 const fs = require('fs');
 
-async function queenAmdi () {
+async function udulaBro () {
     const conn = new WAConnection();
     const Session = new StringSession();  
     conn.version = [2, 2126, 14]
@@ -20,8 +20,8 @@ async function queenAmdi () {
     conn.regenerateQRIntervalMs = 50000;
     
     conn.on('🔄 connecting', async () => {
-        console.log(`${chalk.green.bold('Queen')}${chalk.blue.bold(' Amdi')}
-${chalk.white.italic('Queen Amdi Sting session')}
+        console.log(`${chalk.green.bold('Udula')}${chalk.blue.bold(' Bro')}
+${chalk.white.italic('Udula Bro Sting session')}
 
 ${chalk.blue.italic('ℹ️  Connecting to Whatsapp... Please Wait.')}`);
     });
@@ -29,15 +29,15 @@ ${chalk.blue.italic('ℹ️  Connecting to Whatsapp... Please Wait.')}`);
 
 	conn.on('open', async () => {
 		console.log(
-			chalk.green.bold('Queen Amdi QR Code: '),
-			'AMDI;;;' +
+			chalk.green.bold('UDULA BRO QR Code: '),
+			'UDULA;;;' +
 				Buffer.from(JSON.stringify(conn.base64EncodedAuthInfo())).toString(
 					'base64'
 				)
 		);
 		await conn.sendMessage(
 			conn.user.jid,
-			'AMDI;;;' +
+			'UDULA;;;' +
 				Buffer.from(JSON.stringify(conn.base64EncodedAuthInfo())).toString(
 					'base64'
 				),
@@ -72,5 +72,5 @@ ${chalk.blue.italic('ℹ️  Connecting to Whatsapp... Please Wait.')}`);
 	await conn.connect();
 }
 
-queenAmdi()
+udulaBro()
 

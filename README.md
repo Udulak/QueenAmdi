@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://telegra.ph/file/0afb94ce585d42e7c2c10.jpg" width="300" height="300">
+  <img src="https://telegra.ph/file/0afb94ce585d42e7c2c10.jpg" width="600" height="600">
   <h1>👸💎 UDULA BOT 💎👸</h1>
 </div>
 <p align="center">
